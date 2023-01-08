@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function handleResultsValidation() {
         let roundWon = false;
-        for (let i = 0; i <- 7; i++) {
+        for (let i = 0; i <= 7; i++) {
             const winConditions = winningConditions[i];
             const a = board[winConditions[0]];
             const b = board[winConditions[1]];
@@ -69,6 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (tile.innerText === 'X' || tile.innerText === 'O'){
             return false;
         }
+        return true;
     }
 
     const updateBoard = (index) => {
